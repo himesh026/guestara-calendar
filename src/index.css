@@ -1,0 +1,110 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 3;
+}
+
+.calendar-container {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.resources-column {
+  width: 150px;
+  background: white;
+  border-right: 2px solid #ddd;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+
+.resource-item {
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9em;
+}
+
+.calendar-scroll {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+}
+
+.dates-header {
+  display: flex;
+  height: 60px;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.date-cell {
+  width: 120px;
+  padding: 10px;
+  border-right: 1px solid #eee;
+  flex-shrink: 0;
+}
+
+.date-cell.today {
+  background: #fff3cd;
+}
+
+.calendar-grid {
+  position: relative;
+  min-height: 600px;
+}
+
+.calendar-row {
+  display: flex;
+  height: 40px;
+}
+
+.time-cell {
+  width: 120px;
+  height: 600px;
+  border-right: 1px solid #eee;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.event {
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+.event-content {
+  position: relative;
+  height: 100%;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+}
