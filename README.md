@@ -34,8 +34,8 @@ Add a Database Backend for multi-user event sharing.
 Enhance Accessibility by ensuring full keyboard navigation support.
 
 Links : 
-GitHub Repo: [https://github.com/YOUR_GITHUB_USERNAME/2d-calendar-app](https://github.com/himesh026/guestara-calendar)
+GitHub Repo: (https://github.com/himesh026/guestara-calendar)
 
-Live Demo: [https://YOUR_DEPLOYMENT_URL.vercel.app](https://guestara-calendar-phi.vercel.app/)
+Live Demo:(https://guestara-calendar-phi.vercel.app/)
 
 
