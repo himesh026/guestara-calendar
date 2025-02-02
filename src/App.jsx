@@ -129,12 +129,25 @@ export default function App() {
         </div>
         <div style={{ flexGrow: 1, overflowX: 'auto' }}>
           <div style={{ display: 'flex' }}>
-            {daysInMonth.map(day => (
-              <div key={day.toISOString()} style={{ width: `${cellWidth}px`, borderRight: '1px solid #eee', padding: '4px', boxSizing: 'border-box', textAlign: 'center' }}>
-                <div>{format(day, 'EEE')}</div>
-                <div>{format(day, 'd')}</div>
-              </div>
-            ))}
+
+{daysInMonth.map(day => (
+  <div key={day.toISOString()} style={{ width: `${cellWidth}px`, borderRight: '1px solid #eee', padding: '4px', boxSizing: 'border-box', textAlign: 'center' }}>
+    <div>{format(day, 'EEE')}</div>
+    <div style={{ 
+      ...(isToday(day) ? { 
+        backgroundColor: '#3b82f6',
+        color: 'white',
+        borderRadius: '50%',
+        display: 'inline-block',
+        width: '24px',
+        height: '24px',
+        lineHeight: '24px'
+      } : {})
+    }}>
+      {format(day, 'd')}
+    </div>
+  </div>
+))}
           </div>
           <div>
             {resources.map((resource, resourceIndex) => (
